@@ -1,0 +1,135 @@
+generated: '2026-09-27'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 10
+  own: 9
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - community
+  - other
+  - source
+  - status
+  - support
+  - website
+hosts:
+- host: api.sonicwall.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: sonicwall.com
+  role: api
+  relation: own
+- host: assets-cms.sonicwall.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: sonicwall.com
+  role: other
+  relation: own
+- host: capturelabs.sonicwall.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: sonicwall.com
+  role: other
+  relation: own
+- host: community.sonicwall.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: sonicwall.com
+  role: community
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: help.sonicwall.com
+  found_by:
+  - probed
+  - site-links
+  - docs-index
+  - well-known
+  types: []
+  serves:
+  - docs
+  registrable_domain: sonicwall.com
+  role: support
+  relation: own
+- host: psirt.global.sonicwall.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: sonicwall.com
+  role: other
+  relation: own
+- host: status.sonicwall.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: sonicwall.com
+  role: status
+  relation: own
+- host: trust.sonicwall.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - Compliance
+  serves: []
+  platform: app.safebase.io
+  registrable_domain: sonicwall.com
+  role: other
+  relation: own
+- host: www.sonicwall.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Blog
+  - Documentation
+  - Support
+  - Pricing
+  serves:
+  - docs
+  - cdn
+  - hosting
+  vendor: imperva
+  registrable_domain: sonicwall.com
+  role: website
+  relation: own
